@@ -8,95 +8,95 @@ interface AudioPlayerProps {
 
 const verseLines = [
   {
-    mandala: 1,
-    sanskrit: 'अग्निमीळे पुरोहितं यज्ञस्य देवम् ऋत्विजम् । होतारं रत्नधातमम् ॥',
-    transliteration: 'agním īḷe purohitaṁ yajñasya devaṁ ṛtvijam, hotāraṁ ratnadhātamam',
-    translation: 'I praise Agni, the priest set in front of the sacrifice, the divine officiant of the ritual, the invoker, and best bestower of treasures.',
-    reference: 'Rigveda 1.1.1',
-    note: 'The very first verse of the Rigveda — invoking Agni (Fire) as the link between humans and gods.',
-    audioFile: '/audio/mandala-1.mp3'
-  },
-  {
-    mandala: 2,
-    sanskrit: 'इन्द्रं वो वीराः हवते कवीनां पुरुहूतं शक्रमीळते धियानः ॥',
-    transliteration: 'indraṁ vo vīrāḥ havate kavīnāṁ puruhūtaṁ śakram īḷate dhiyānaḥ',
-    translation: 'O heroes, invoke Indra, who is much-invoked among the wise, the mighty one (Śakra) whom seers praise in thought.',
-    reference: 'Rigveda 2 — Hymn to Indra',
-    note: 'Indra — the thunder-wielding deity — embodies courage, leadership, and victory over chaos.',
-    audioFile: '/audio/mandala-2.mp3'
-  },
-  {
-    mandala: 3,
-    sanskrit: 'तत्सवितुर्वरेण्यं भर्गो देवस्य धीमहि । धियो यो नः प्रचोदयात् ॥',
-    transliteration: 'tát savitúr vareṇyaṁ bhárgo devásya dhīmahi, dhíyo yó naḥ pracodáyāt',
-    translation: 'We meditate upon the excellent radiance of the divine Savitṛ; may he stimulate and direct our intellects.',
-    reference: 'Rigveda 3 — Gāyatrī Mantra',
-    note: 'The Gāyatrī Mantra, the spiritual heart of the Vedas — a prayer for illumination and awakening.',
-    audioFile: '/audio/mandala-3.mp3'
-  },
-  {
-    mandala: 4,
-    sanskrit: 'अग्ने शुक्रम् त्वं रयेः चित्रं रायः समिद्धः कवि भरा ॥',
-    transliteration: 'agne śukraṁ tvaṁ rayeś citraṁ rāyaḥ samiddhaḥ kave bhara',
-    translation: 'O Agni, when kindled, bring bright and splendid wealth; O wise one, bestow riches upon us.',
-    reference: 'Rigveda 4 — Agni the Bestower',
-    note: 'Agni here symbolizes illumination and prosperity — both material and spiritual.',
-    audioFile: '/audio/mandala-4.mp3'
-  },
-  {
-    mandala: 5,
-    sanskrit: 'मरुतो याथा पथिभिः शुभा अशुभिर्मानुषाः शुभः पथः ॥',
-    transliteration: 'maruto yāthā pathibhir yāthā gāḥ śubhāśubhir mānuṣāḥ śubhas pāthaḥ',
-    translation: 'O Maruts, move by your paths, whether bright or dark; make the way auspicious for mankind.',
-    reference: 'Rigveda 5 — Hymn to Maruts',
-    note: 'The Maruts — deities of wind and storm — represent movement, power, and purification.',
-    audioFile: '/audio/mandala-5.mp3'
-  },
-  {
-    mandala: 6,
-    sanskrit: 'उषा आगात् कृणोति शुभ्रं ज्योतिः शं नो भवतु दुहिता दिवः ॥',
-    transliteration: 'uṣā āgat kṛṇotī śubhraṁ jyotiḥ śaṁ no bhavatu duhitā divo',
-    translation: 'Uṣas (the Dawn) has come; she creates bright light; may the Daughter of Heaven bring peace to us.',
-    reference: 'Rigveda 6 — Hymn to Uṣas',
-    note: 'Uṣas personifies new beginnings and renewal — the ever-returning dawn of awareness.',
-    audioFile: '/audio/mandala-6.mp3'
-  },
-  {
-    mandala: 7,
-    sanskrit: 'त्र्यंबकं यजामहे सुगंधिं पुष्टिवर्धनम् । उर्वारुकमिव बन्धनान् मृत्योर्मुक्षीय मा अमृतात् ॥',
-    transliteration: 'tryambakaṁ yajāmahe sugandhiṁ puṣṭivardhanam, urvārukam iva bandhanān mṛtyor mukṣīya mā amṛtāt',
-    translation: 'We worship the Three-eyed One (Tryambaka), who is fragrant and nourishes all beings; may He liberate us from death, not from immortality.',
-    reference: 'Rigveda 7.59.12 — Mahāmṛtyuñjaya Mantra',
-    note: 'A prayer to Rudra (Śiva) for release from death, disease, and fear — symbolizing spiritual rebirth.',
-    audioFile: '/audio/mandala-7.mp3'
-  },
-  {
-    mandala: 8,
-    sanskrit: 'अपाम सोमममृता अभूमा, आगन्म ज्योतिरविदाम देवान् ॥',
-    transliteration: 'apāma somam amṛtā abhūma āganma jyotir avidāma devān',
-    translation: 'We have drunk the Soma; we have become immortal; we have reached the Light; we have found the gods.',
-    reference: 'Rigveda 8 — Hymn to Soma',
-    note: 'A verse of ecstatic realization, symbolizing spiritual union with the divine essence.',
-    audioFile: '/audio/mandala-8.mp3'
-  },
-  {
-    mandala: 9,
-    sanskrit: 'शुक्रं ते अन्यद् अरुषं ते अन्यद् वर्णो भूत्वा भवत्य यज्नियाय ॥',
-    transliteration: 'śukraṁ te anyad aruṣaṁ te anyad varṇo bhūtvā bhavati yajñiyāya',
-    translation: 'Your bright form is one, your reddish form another; changing your color, you become fit for the sacrifice.',
-    reference: 'Rigveda 9 — Soma Pavamāna',
-    note: 'The changing colors of Soma symbolize purification and transformation through the sacred act.',
-    audioFile: '/audio/mandala-9.mp3'
-  },
-  {
-    mandala: 10,
-    sanskrit: 'नासदासीन्नो सदासीत्तदानीं, नासीद्रजो नो व्योमा परो यत् ॥',
-    transliteration: 'nāsad āsīn no sad āsīt tadānīṁ nāsīd rajo no vyomā paro yat',
-    translation: 'Then there was neither non-existence nor existence; there was no realm of air, nor the sky beyond it.',
-    reference: 'Rigveda 10 — Nāsadīya Sūkta',
-    note: 'The Creation Hymn — one of humanity\'s earliest philosophical reflections on existence itself.',
-    audioFile: '/audio/mandala-10.mp3'
-  },
+  mandala: 1,
+  sanskrit: 'अग्निमीळे पुरोहितं यज्ञस्य देवम् ऋत्विजम् । होतारं रत्नधातमम् ॥१॥',
+  transliteration: 'agním īḷe purohitaṁ yajñasya devaṁ ṛtvijam, hotāraṁ ratnadhātamam',
+  translation: 'I praise Agni, the priest placed in front of the sacrifice, the divine officiant of the ritual, the invoker, and best bestower of treasures.',
+  reference: 'Rigveda 1.1.1',
+  note: 'The opening verse of the Rigveda — invoking Agni (Fire) as the divine messenger who connects mortals and gods.',
+  audioFile: '/audio/mandala-1.mp3'
+},
+{
+  mandala: 2,
+  sanskrit: 'यो जात एव प्रथमो मनस्वान् देवो देवान् क्रतुना पर्यभूषत् । यस्य शुष्माद् रोदसी अभ्यसेतां नृम्णस्य मह्ना स जनास इन्द्रः ॥१॥',
+  transliteration: 'yo jāta eva prathamo manasvān devo devān kratunā paryabhūṣat, yasya śuṣmād rodasī abhyasetāṁ nṛmṇasya mahnā sa janāsa indraḥ',
+  translation: 'He who, born first, mighty in mind, adorned the gods with wisdom — by whose power heaven and earth tremble — he, O people, is Indra.',
+  reference: 'Rigveda 2.12.1',
+  note: 'A hymn glorifying Indra as the foremost and most powerful among gods, whose strength sustains the cosmos.',
+  audioFile: '/audio/mandala-2.mp3'
+},
+{
+  mandala: 3,
+  sanskrit: 'विश्वानि देवा सवितर् दूर्धा नि परासुव । यद् भद्रं तन् न आसुव ॥१०॥',
+  transliteration: 'viśvāni devā savitar duritāni parāsuva, yad bhadraṁ tan na āsuva',
+  translation: 'O divine Savitar, remove all evil and grant us what is good and auspicious.',
+  reference: 'Rigveda 3.62.10',
+  note: 'The Gayatri Mantra — one of the most sacred verses of the Rigveda, invoking Savitar, the divine source of light and inspiration.',
+  audioFile: '/audio/mandala-3.mp3'
+},
+{
+  mandala: 4,
+  sanskrit: 'त्वां ह्यग्ने सदमित्समन्यवो देवासो देवमरतिं न्येरिर इति क्रत्वा न्येरिरे । अमर्त्यं यजतं मर्त्येष्वा देवमादेवं जनत प्रचेतसं विश्वमादेवं जनत प्रचेतसम् ॥१॥',
+  transliteration: 'tvāṁ hy agne sadam it samanyavo devāso devam aratiṁ nyerir iti kratvā nyerire, amartyaṁ yajataṁ martyeṣvā devam ādevaṁ janata pracetasaṁ viśvam ādevaṁ janata pracetasaṁ',
+  translation: 'For you, O Agni, ever and always the gods have chosen you — the immortal among mortals, the divine seer born of the gods, all-knowing and ever-wise.',
+  reference: 'Rigveda 4.1.1',
+  note: 'This hymn opens Mandala 4, praising Agni as the eternal divine intelligence dwelling among men.',
+  audioFile: '/audio/mandala-4.mp3'
+},
+{
+  mandala: 5,
+  sanskrit: 'यत् प्रायासिष्ट पृषतीभिरश्वैः वीळुपविभिर्मरुतो रथेभिः । क्षोदन्त आपो रिणते वनान्यवो स्रियो वृषभः क्रन्दतु द्यौः ॥६॥',
+  transliteration: 'yat prāyāsiṣṭa pṛṣatībhir aśvaiḥ vīḷupavibhir maruto rathebhih, kṣodanta āpo riṇate vanānya vo sriyo vṛṣabhaḥ krandatu dyaūḥ',
+  translation: 'When you, O Maruts, drive forth with your spotted steeds and shining chariots, the waters roar, the forests quake, and the heavens thunder like a bull.',
+  reference: 'Rigveda 5.58.6',
+  note: 'A vivid hymn to the Maruts — storm deities symbolizing energy, vitality, and cosmic movement.',
+  audioFile: '/audio/mandala-5.mp3'
+},
+{
+  mandala: 6,
+  sanskrit: 'उदु श्रिय उषसो रोचमाना अस्थुरपां नोर्मयो रुशन्तः । कृणोति विश्वा सुपथा सुगान्यभूदु वस्वी दक्षिणा मघोनी ॥१॥',
+  transliteration: 'udu śriya uṣaso rocamānā asthur apāṁ normayo ruśantaḥ, kṛṇoti viśvā supathā sugāny abhūd u vasvī dakṣiṇā maghonī',
+  translation: 'The radiant dawns have risen in splendor, their waves shining with brightness; they create all fair paths — generous, blessed, and full of bounty.',
+  reference: 'Rigveda 6.64.1',
+  note: 'A hymn celebrating Ushas (the Dawn) as the bringer of light, order, and prosperity to the world.',
+  audioFile: '/audio/mandala-6.mp3'
+},
+{
+  mandala: 7,
+  sanskrit: 'त्र्यंबकं यजामहे सुगंधिं पुष्टिवर्धनम् । उर्वारुकमिव बन्धनान् मृत्योर्मुक्षीय मा अमृतात् ॥१२॥',
+  transliteration: 'tryambakaṁ yajāmahe sugandhiṁ puṣṭi-vardhanam, urvārukam iva bandhanān mṛtyor mukṣīya mā’mṛtāt',
+  translation: 'We worship the Three-eyed One, fragrant and nourishing all beings; may He liberate us from death’s bondage, like a cucumber released from its stem, but not from immortality.',
+  reference: 'Rigveda 7.59.12',
+  note: 'The Mahāmṛtyuñjaya Mantra — invoking Rudra (Shiva) for healing, longevity, and liberation from the cycle of death.',
+  audioFile: '/audio/mandala-7.mp3'
+},
+{
+  mandala: 8,
+  sanskrit: 'अपाम सोमममृता अभूमागन्म ज्योतिरविदाम देवान् । किं नूनमस्मान्कृणवदरातिः किमु धूर्तिरमृत मर्त्यस्य ॥३॥',
+  transliteration: 'apām somam amṛtā abhūma āganma jyotir avidāma devān, kiṁ nūnam asmān kṛṇavad arātiḥ kimu dhūrtir amṛta martyasya',
+  translation: 'We have drunk the Soma, we have become immortal, we have reached the light, we have found the gods. What harm can enmity or deceit do to us now, O immortal one, against the mortal?',
+  reference: 'Rigveda 8.48.3',
+  note: 'One of the most ecstatic Soma hymns, describing mystical union and spiritual illumination through the divine drink.',
+  audioFile: '/audio/mandala-8.mp3'
+},
+{
+  mandala: 9,
+  sanskrit: 'सोमः पवते जनिता मतीनां जनिता दिवो जनिता पृथिव्याः । जनिताग्नेर्जनिता सूर्यस्य जनितेन्द्रस्य जनितोत विष्णोः ॥५॥',
+  transliteration: 'somaḥ pavate janitā matīnām janitā divo janitā pṛthivyāḥ, janitāgner janitā sūryasya janitendrasya janitota viṣṇoḥ',
+  translation: 'Soma, the flowing one, is the generator of inspirations, the creator of heaven and earth, the source of Agni, the Sun, Indra, and Vishnu.',
+  reference: 'Rigveda 9.95.5',
+  note: 'A hymn to Soma as the divine creative principle, the life-force underlying all gods and worlds.',
+  audioFile: '/audio/mandala-9.mp3'
+},
+{
+  mandala: 10,
+  sanskrit: 'नासदासीन्नो सदासीत्तदानीं नासीद्रजो नो व्योमा परो यत् । किमावरीवः कुह कस्य शर्मन्नम्भः किमासीद्गहनं गभीरम् ॥१॥',
+  transliteration: 'nāsad āsīn no sad āsīt tadānīṁ nāsīd rajo no vyomā paro yat, kim āvarīvaḥ kuha kasya śarman ambhaḥ kim āsīd gahanaṁ gabhīram',
+  translation: 'Then was neither non-existence nor existence; there was no realm of air, no sky beyond. What covered it? Where was it? In whose keeping? Was there the deep unfathomed water?',
+  reference: 'Rigveda 10.129.1',
+  note: 'The opening of the Nasadiya Sukta — a profound philosophical hymn contemplating the origin of creation and the mystery of being.',
+  audioFile: '/audio/mandala-10.mp3'
+}
 ];
 
 export default function AudioPlayer({ onClose }: AudioPlayerProps) {
