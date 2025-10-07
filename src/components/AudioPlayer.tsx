@@ -7,7 +7,7 @@ interface AudioPlayerProps {
 }
 
 const verseLines = [
-{
+  {
     mandala: 1,
     sanskrit: 'अग्निमीळे पुरोहितं यज्ञस्य देवम् ऋत्विजम् । होतारं रत्नधातमम् ॥',
     transliteration: 'agním īḷe purohitaṁ yajñasya devaṁ ṛtvijam, hotāraṁ ratnadhātamam',
@@ -96,7 +96,7 @@ const verseLines = [
     reference: 'Rigveda 10.129.1',
     note: 'The opening of the Nasadiya Sukta — the Hymn of Creation — a profound philosophical musing on existence and the origin of the cosmos.',
     audioFile: '/audio/mandala-10.mp3'
-  } 
+  }
 
 ];
 
@@ -114,7 +114,7 @@ export default function AudioPlayer({ onClose }: AudioPlayerProps) {
     bgAudioRef.current.loop = true;
     bgAudioRef.current.volume = 0.3;
 
-    bgAudioRef.current.play().catch(() => {});
+    bgAudioRef.current.play().catch(() => { });
 
     return () => {
       if (bgAudioRef.current) {
@@ -349,6 +349,27 @@ export default function AudioPlayer({ onClose }: AudioPlayerProps) {
 
               <div className="text-center text-amber-100/60 text-xs font-light">
                 {currentLine + 1} of {verseLines.length} • {isPlaying ? 'Listening to ancient wisdom...' : 'Press play to begin'}
+              </div>
+              <div className="text-center text-amber-100/60 text-xs font-light">
+                Data credits:&nbsp;
+                <a
+                  href="https://sri-aurobindo.co.in/workings/matherials/rigveda/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-amber-200"
+                >
+                  Sri-Aurobindo Text Data
+                </a>
+                &nbsp;|&nbsp;
+                Audio credits:&nbsp;
+                <a
+                  href="https://sri-aurobindo.co.in/workings/matherials/rigveda/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-amber-200"
+                >
+                  Sri-Aurobindo Audio Data
+                </a>
               </div>
             </div>
           </div>
