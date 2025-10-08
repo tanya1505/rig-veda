@@ -153,6 +153,16 @@ export default function Panel7({ onListenClick }: Panel7Props) {
                 </span>
               </motion.button>
             </div>
+            {/* Footer line */}
+            <motion.div
+              className="text-center text-amber-100/60 text-xs font-light mt-10"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1.5, delay: 1.7 }}
+              viewport={{ once: true }}
+            >
+              Made with ❤️ by Param
+            </motion.div>
           </motion.div>
         </div>
       </div>
